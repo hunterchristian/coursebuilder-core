@@ -307,9 +307,9 @@ if need_install logilab/pylint ChangeLog " -- " 1.4.0 test ; then
   mkdir -p "$RUNTIME_HOME/logilab"
   rm -rf "$RUNTIME_HOME/logilab/pylint"
   download_and_unpack \
-    https://bitbucket.org/logilab/pylint/get/pylint-1.4.tar.gz \
+    https://files.pythonhosted.org/packages/32/d6/6a6718c89e01848bc4685ebc1dc3afb743b2a51df3976bc0ea40919c8de5/pylint-1.4.0.tar.gz \
     "$RUNTIME_HOME/logilab"
-  mv "$RUNTIME_HOME/logilab/logilab-pylint-6224a61f7491" \
+  mv "$RUNTIME_HOME/logilab/pylint-1.4.0" \
     "$RUNTIME_HOME/logilab/pylint"
 fi
 
@@ -317,9 +317,9 @@ if need_install logilab/astroid ChangeLog " -- " 1.3.2 test ; then
   mkdir -p "$RUNTIME_HOME/logilab"
   rm -rf "$RUNTIME_HOME/logilab/asteroid"
   download_and_unpack \
-    https://bitbucket.org/logilab/astroid/get/astroid-1.3.2.tar.gz \
+    https://files.pythonhosted.org/packages/98/07/b2040b80564be161825d5ace6f3519576897f4ffb0ac51ede007669b17ed/astroid-1.3.2.tar.gz \
     "$RUNTIME_HOME/logilab"
-  mv "$RUNTIME_HOME/logilab/logilab-astroid-16369edfbc89" \
+  mv "$RUNTIME_HOME/logilab/astroid-1.3.2" \
     "$RUNTIME_HOME/logilab/astroid"
 fi
 
@@ -327,10 +327,10 @@ if need_install logilab/logilab/common ChangeLog " -- " 0.62.0 test ; then
   mkdir -p "$RUNTIME_HOME/logilab/logilab"
   rm -rf "$RUNTIME_HOME/logilab/logilab/common"
   download_and_unpack \
-    https://bitbucket.org/logilab/logilab-common/get/logilab-common-version-0.62.0.tar.gz \
+    https://files.pythonhosted.org/packages/f2/07/64a92f76bb50d686285ada111b3c6ca3a4080a008ed042ce777c1cc2de39/logilab-common-0.62.0.tar.gz \
     "$RUNTIME_HOME/logilab/logilab"
 
-  mv "$RUNTIME_HOME/logilab/logilab/logilab-logilab-common-4797b86b800e" \
+  mv "$RUNTIME_HOME/logilab/logilab/logilab-common-0.62.0" \
     "$RUNTIME_HOME/logilab/logilab/common"
   touch "$RUNTIME_HOME/logilab/logilab/__init__.py"
 fi
